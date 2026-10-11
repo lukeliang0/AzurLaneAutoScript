@@ -87,9 +87,11 @@ class RewardResearch(ResearchSelector, ResearchQueue, StorageHandler):
         """
         if not self.enforce:
             logger.info('Enforce choosing research project')
-            self.enforce = True
-            return self.research_select(self.research_sort_filter(self.enforce),
-                                        drop=drop, add_queue=add_queue)
+            logger.info('Do nothing')
+            # self.enforce = True
+            # return self.research_select(self.research_sort_filter(self.enforce),
+            #                             drop=drop, add_queue=add_queue)
+
         return True
 
     def research_select(self, priority, drop=None, add_queue=True):
