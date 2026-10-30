@@ -412,7 +412,7 @@ class OSMap(OSFleet, Map, GlobeCamera, StrategicSearchHandler):
         elif self.is_cl1_enabled and remain <= 2:
             logger.info('Just less than 3 days to OpSi reset, '
                         'set ActionPointPreserve to 1000 temporarily for hazard 1 leveling')
-            return 1000
+            return 2000
         elif remain <= 2:
             logger.info('Just less than 3 days to OpSi reset, '
                         'set ActionPointPreserve to 300 temporarily')
